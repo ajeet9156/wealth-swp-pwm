@@ -1,0 +1,36 @@
+{
+	"name": "DS_blob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_blobadfstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "emp_detail",
+				"container": "personaldoc"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Emp_Id",
+				"type": "String"
+			},
+			{
+				"name": "Employee_Nm",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			}
+		]
+	}
+}
