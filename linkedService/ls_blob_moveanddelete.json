@@ -1,0 +1,13 @@
+{
+	"name": "ls_blob_moveanddelete",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Move files from source to archive folder and delete files from source folder",
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=blobadfstorage;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDdFNUM3NDU1LUZBRjMtNDlBNi1CQ0JBLTVBREFBRTc1NTM2Rl85YzUwMDQwNy00YmIzLTRjMWUtYTA5Yy02ZjVkMDgzNTc1ZWYiDQp9"
+		}
+	}
+}

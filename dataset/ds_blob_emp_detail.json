@@ -1,0 +1,23 @@
+{
+	"name": "ds_blob_emp_detail",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_blobadfstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "emp_detail",
+				"container": "personaldoc"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

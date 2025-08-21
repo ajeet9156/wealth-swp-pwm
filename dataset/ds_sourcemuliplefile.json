@@ -1,0 +1,22 @@
+{
+	"name": "ds_sourcemuliplefile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sourcemultilefile",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "source"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
