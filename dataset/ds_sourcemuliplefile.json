@@ -1,24 +1,15 @@
 {
-	"name": "ds_source",
+	"name": "ds_sourcemuliplefile",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "ls_blob_moveanddelete",
+			"referenceName": "ls_sourcemultilefile",
 			"type": "LinkedServiceReference"
-		},
-		"parameters": {
-			"Filename": {
-				"type": "string"
-			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().Filename",
-					"type": "Expression"
-				},
 				"container": "source"
 			},
 			"columnDelimiter": ",",

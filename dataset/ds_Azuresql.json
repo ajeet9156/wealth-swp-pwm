@@ -28,7 +28,7 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "wealthgl",
+			"schema": "Wealthgl",
 			"table": {
 				"value": "@dataset().Tablename",
 				"type": "Expression"
