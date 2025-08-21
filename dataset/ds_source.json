@@ -5,11 +5,6 @@
 			"referenceName": "ls_blob_moveanddelete",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"Filename": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
