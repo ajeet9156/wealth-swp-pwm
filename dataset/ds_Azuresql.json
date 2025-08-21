@@ -5,6 +5,11 @@
 			"referenceName": "LS_WealthglDB",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Tablename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [
@@ -23,8 +28,11 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "Wealthgl",
-			"table": "Employee_Detail"
+			"schema": "wealthgl",
+			"table": {
+				"value": "@dataset().Tablename",
+				"type": "Expression"
+			}
 		}
 	}
 }
